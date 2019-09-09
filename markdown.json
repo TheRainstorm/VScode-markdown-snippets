@@ -1,0 +1,222 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+//general
+	"h1": {
+		"prefix": ["h","h1"],
+		"body": [
+			"# $1",
+			"$0"
+		],
+	},
+	"h2": {
+		"prefix": ["hh","h2"],
+		"body": [
+			"## $1",
+			"$0"
+		],
+	},
+	"h3": {
+		"prefix": ["hhh","h3"],
+		"body": [
+			"### $1",
+			"$0"
+		],
+	},
+	"h4": {
+		"prefix": ["h4"],
+		"body": [
+			"##### $1",
+			"$0"
+		],
+	},
+	"h5": {
+		"prefix": ["h5"],
+		"body": [
+			"####### $1",
+			"$0"
+		],
+	},
+	"h6": {
+		"prefix": ["h6"],
+		"body": [
+			"####### $1",
+			"$0"
+		],
+	},
+	"bold": {
+		"prefix": ["bo"],
+		"body": [
+			"**${1:text}**$0",
+		],
+	},
+	"italic": {
+		"prefix": ["it"],
+		"body": [
+			"*${1:text}*$0",
+		],
+	},
+	"code block": {
+		"prefix": ["cb"],
+		"body": [
+			"``` ${1:language}",
+			"$2",
+			"```",
+			"$0"
+		],
+	},
+	"comment": {
+		"prefix": ["c"],
+		"body": [
+			"<!-- ${1:text} --> $0",
+		],
+	},
+	"link": {
+		"prefix": ["a","l"],
+		"body": [
+			"[${1:site_name}](https://${2:site_url}) $0"
+		],
+	},
+	"img": {
+		"prefix": "img",
+		"body": [
+			"![${1:img_name}](https://${2:img_url}) $0"
+		],
+	},
+//Table
+	"table 2 column": {
+		"prefix": ["tt","t2"],
+		"body": [
+			"${1:header1} | ${2:header2}",
+			"--- | ---",
+			"${3:item1} | ${4:item2}",
+		],
+	},
+	"table 3 column": {
+		"prefix": ["ttt","t3"],
+		"body": [
+			"${1:header1} | ${2:header2} | ${3:header3}",
+			"--- | --- | ---",
+			"${4:item1} | ${5:item2} | ${6:item3}",
+		],
+	},
+	"table 4 column": {
+		"prefix": ["t4"],
+		"body": [
+			"${1:header1} | ${2:header2} | ${3:header3} | ${4:header4}",
+			"--- | --- | ---",
+			"${5:item1} | ${6:item2} | ${7:item3} | ${8:item4}",
+		],
+	},
+//Math type
+	//$$
+	"block math": {
+		"prefix": "mb",
+		"body": [
+			"$$",
+			"\t$0",
+			"$$",
+		],
+		"description": "block math formula"
+	},
+	"inline math": {
+		"prefix": "m",
+		"body": [
+			"$ $0 $"
+		],
+		"description": "inline math formula"
+	},
+	//乘，除，指数
+	"plus": {
+		"prefix": "*",
+		"body": [
+			"\\times "
+		],
+	},
+	"div": {
+		"prefix": "\\",
+		"body": [
+			"\\frac{$0}{$1}"
+		],
+	},
+	"^": {
+		"prefix": "^",
+		"body": [
+			"^{$1} $0"
+		],
+	},
+	//约等于，不等于,大于等于，小于等于
+	"= approx": {
+		"prefix": "=a",
+		"body": [
+			"\\approx "
+		],
+	},
+	"= not": {
+		"prefix": "=n",
+		"body": [
+			"\\neq "
+		],
+	},
+	">=": {
+		"prefix": ">=",
+		"body": [
+			"\\geq "
+		],
+	},
+	"<=": {
+		"prefix": "<=",
+		"body": [
+			"\\leq "
+		],
+	},
+
+	//arrows: ->,<-,=>,<=
+	"->": {
+		"prefix": "->",
+		"body": [
+			"\\rightarrow "
+		],
+	},
+	"<-": {
+		"prefix": "<-",
+		"body": [
+			"\\leftarrow "
+		],
+	},
+	"=>": {
+		"prefix": "=>",
+		"body": [
+			"\\Rightarrow "
+		],
+	},
+	"<=_": {
+		"prefix": "<=_",
+		"body": [
+			"\\Leftarrow "
+		],
+	},
+	"-->": {
+		"prefix": "-->",
+		"body": [
+			"\\longrightarrow "
+		],
+	},
+	"<--": {
+		"prefix": "<--",
+		"body": [
+			"\\longleftarrow "
+		],
+	},
+}
