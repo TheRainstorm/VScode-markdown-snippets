@@ -4,4 +4,4 @@ Make it's more convenient to make **notes** with **markdown**. (especially when 
 ***
 ## Detail
 *The current process:*
-![img_name](./prefix.png) 
+![img_name](https://github.com/TheRainstorm/VScode-markdown-snippets/prefix.png) 
